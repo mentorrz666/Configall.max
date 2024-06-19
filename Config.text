@@ -15,4 +15,11 @@ vmess://eyJhZGQiOiI1LjEwMS4yMTcuNCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiJyYW5kb20i
 vmess://eyJhZGQiOiI4MC4yNDAuMTEzLjgiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoicmFuZG9tIiwiaG9zdCI6Im1ybWFudG8uaXIiLCJpZCI6ImM3NDliOGUzLTI3ZjItNDFiYy1kMTIxLWM1MWIwOGUyYjk0ZSIsIm5ldCI6IndzIiwicGF0aCI6Ii93cz9lZFx1MDAzZDIwNDgiLCJwb3J0IjoiNDQzIiwicHMiOiJHY29yZS00NDMtMTIiLCJzY3kiOiJhdXRvIiwic25pIjoiY2xvdWQuZ2NvcmUuY29tIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=
 vmess://eyJhZGQiOiI5MS4yNDMuODcuNjIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoic2FmYXJpIiwiaG9zdCI6Im1ybWFudG8uaXIiLCJpZCI6ImM3NDliOGUzLTI3ZjItNDFiYy1kMTIxLWM1MWIwOGUyYjk0ZSIsIm5ldCI6IndzIiwicGF0aCI6Ii93cz9lZFx1MDAzZDIwNDgiLCJwb3J0IjoiNDQzIiwicHMiOiJHY29yZS00NDMtMTMiLCJzY3kiOiJhdXRvIiwic25pIjoiY2xvdWQuZ2NvcmUuY29tIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=
 vmess://eyJhZGQiOiI1LjE4OS4yMDcuMTQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoicmFuZG9tIiwiaG9zdCI6Im1ybWFudG8uaXIiLCJpZCI6ImM3NDliOGUzLTI3ZjItNDFiYy1kMTIxLWM1MWIwOGUyYjk0ZSIsIm5ldCI6IndzIiwicGF0aCI6Ii93cz9lZFx1MDAzZDIwNDgiLCJwb3J0IjoiNDQzIiwicHMiOiJHY29yZS00NDMtMTQiLCJzY3kiOiJhdXRvIiwic25pIjoiY2xvdWQuZ2NvcmUuY29tIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=
+gcore80
+vless://6141ee96-85d1-4162-a742-6eb5948838a9@92.38.142.29:80?path=%2Fws%3Fed%3D2048&security=none&encryption=none&host=aradcloud.com&type=ws#Gcore.80-s1
+vless://6141ee96-85d1-4162-a742-6eb5948838a9@80.240.113.8:80?path=%2Fws%3Fed%3D2048&security=none&encryption=none&host=aradcloud.com&type=ws#Gcore.80-s2
+vless://6141ee96-85d1-4162-a742-6eb5948838a9@80.240.113.62:80?path=%2Fws%3Fed%3D2048&security=none&encryption=none&host=aradcloud.com&type=ws#Gcore.80-s3
+vless://6141ee96-85d1-4162-a742-6eb5948838a9@46.49.10.231:80?path=%2Fws%3Fed%3D2048&security=none&encryption=none&host=aradcloud.com&type=ws#Gcore.80-s4
+vless://6141ee96-85d1-4162-a742-6eb5948838a9@91.243.87.62:80?path=%2Fws%3Fed%3D2048&security=none&encryption=none&host=aradcloud.com&type=ws#Gcore.80-s6
+vless://6141ee96-85d1-4162-a742-6eb5948838a9@46.49.10.237:80?path=%2Fws%3Fed%3D2048&security=none&encryption=none&host=aradcloud.com&type=ws#Gcore.80-s5
 
