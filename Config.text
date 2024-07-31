@@ -36,3 +36,9 @@ vless://1596ab2d-3f15-4c18-8df8-e633e8dc037f@92.223.124.24:443?path=%2F&security
 vless://1596ab2d-3f15-4c18-8df8-e633e8dc037f@92.223.124.35:443?path=%2F&security=tls&encryption=none&host=sugan.ir&type=ws&sni=gcore.com#gcore.443.server3
 vless://1596ab2d-3f15-4c18-8df8-e633e8dc037f@92.223.124.37:443?path=%2F&security=tls&encryption=none&host=sugan.ir&type=ws&sni=gcore.com#gcore.443.server2
 vless://1596ab2d-3f15-4c18-8df8-e633e8dc037f@92.223.124.34:443?path=%2F&security=tls&encryption=none&host=sugan.ir&type=ws&sni=gcore.com#gcore.443.server1
+direct443
+vless://25a4e9c1-7347-44e5-a476-b3c7e2ea8332@185.250.207.172:37318?path=%2Fwww&security=none&encryption=none&host=pr3ne2e6ffwb.ydns.eu&type=splithttp#f4ej1jrv
+vless://1bb6c556-4b8d-41b3-ba7e-023e5a779eca@45.135.235.162:443?path=%2F%3Fed%3D2560%2Fv2ray&security=tls&encryption=none&alpn=h2,http/1.1&host=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir&fp=randomized&type=ws&sni=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir#tlsdirect443._1
+vless://1bb6c556-4b8d-41b3-ba7e-023e5a779eca@185.148.106.35:443?path=%2F%3Fed%3D2560%2Fv2ray&security=tls&encryption=none&alpn=h2,http/1.1&host=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir&fp=randomized&type=ws&sni=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir#tlsdirect443._2
+vless://1bb6c556-4b8d-41b3-ba7e-023e5a779eca@45.80.111.37:443?path=%2F%3Fed%3D2560%2Fv2ray&security=tls&encryption=none&alpn=h2,http/1.1&host=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir&fp=randomized&type=ws&sni=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir#tlsdirect443._4
+vless://1bb6c556-4b8d-41b3-ba7e-023e5a779eca@45.135.235.131:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&alpn=h2,http/1.1&host=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir&fp=randomized&type=ws&sni=soft98irxcHLLm3rzGg6US86xK37vuV8V93k.mentorsoft98.ir#tlsdirect443._3
