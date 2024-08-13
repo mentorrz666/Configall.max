@@ -1,6 +1,10 @@
 fastly 4545
 vless://8ba1c229-b58d-4862-f5a6-00ceef32fdff@appllio.com:443?path=%2F&security=tls&encryption=none&host=fastlymentor.net&fp=firefox&type=ws&sni=appllio.com#Fastly-443+_1
 
+faull
+vless://35b9a67f-3f51-4030-a3e0-2eefdb63907e@14.102.229.199:2053?path=%2Fv3rbuify.yinte.ir.shop.com%3Fed%3D2560&security=tls&encryption=none&alpn=h2&host=Book.mentorsoft98.ir.&fp=randomized&type=ws&sni=BOoK.MENToRsOFT98.ir.#full+oprator+2
+vless://35b9a67f-3f51-4030-a3e0-2eefdb63907e@14.102.229.133:2053?path=%2Fv3rbuify.yinte.ir.shop.com%3Fed%3D2560&security=tls&encryption=none&alpn=h2&host=Book.mentorsoft98.ir.&fp=randomized&type=ws&sni=BOoK.MENToRsOFT98.ir.#full+oprator+1
+vless://35b9a67f-3f51-4030-a3e0-2eefdb63907e@185.176.26.253:2053?path=%2Fv3rbuify.yinte.ir.shop.com%3Fed%3D2560&security=tls&encryption=none&alpn=h2&host=Book.mentorsoft98.ir.&fp=randomized&type=ws&sni=BOoK.MENToRsOFT98.ir.#full+oprator+3
 
 fastly acc 4545
 vmess://eyJhZGQiOiJoZWxwLmdpdGh1YmFzc2V0cy5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImZhc3RseW1lbnRvci5uZXQiLCJpZCI6IjhiYTFjMjI5LWI1OGQtNDg2Mi1mNWE2LTAwY2VlZjMyZmRmZiIsIm5ldCI6IndzIiwicGF0aCI6Ii93cz9lZFx1MDAzZDIwNDgiLCJwb3J0IjoiODAiLCJwcyI6IkZhc3RseS04MC12Mi5zMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
