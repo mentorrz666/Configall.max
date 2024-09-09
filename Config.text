@@ -2,3 +2,5 @@ vless://448779f3-758d-4c38-ad02-bf37b6baf164@66.235.200.28:443?path=%2F&security
 vless://448779f3-758d-4c38-ad02-bf37b6baf164@66.235.200.37:443?path=%2F&security=tls&encryption=none&alpn=http/1.1&host=Book.mentorsoft98.ir.&fp=firefox&type=ws&sni=BOoK.MENToRsOFT98.ir.#Hamarh+-+Cloned.1
 vless://d9e2d052-4a65-4e26-b085-74224354115a@66.235.200.28:8443?path=%2F&security=tls&encryption=none&alpn=http/1.1&host=Book.mentorsoft98.ir.&fp=firefox&type=httpupgrade&sni=BOoK.MENToRsOFT98.ir.#8443-3
 vless://d9e2d052-4a65-4e26-b085-74224354115a@66.235.200.37:8443?path=%2F&security=tls&encryption=none&alpn=http/1.1&host=Book.mentorsoft98.ir.&fp=firefox&type=httpupgrade&sni=BOoK.MENToRsOFT98.ir.#8443-2
+bbjadid
+vless://2324cbdc-7e50-4698-be78-52bc54121e25@monitor.tgju.org:443?path=%2Fmentorreza%3Fed%3D2048&security=tls&encryption=none&host=mohammadreza-3fk.pages.dev&type=ws&sni=pages.dev#m.config.all
