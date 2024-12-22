@@ -1,0 +1,398 @@
+{
+  "remarks": "Xray-Load-Balancer (Surfboardv2ray)",
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "api",
+      "port": 10813,
+      "listen": "127.0.0.1",
+      "protocol": "dokodemo-door",
+      "settings": {
+        "udp": false,
+        "address": "127.0.0.1",
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy-1",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.141.134",
+            "port": 443,
+            "users": [
+              {
+                "id": "003afe20-bef1-11ef-9cdb-4bcb0f99365b",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/Francemntor.strangled.net/vpnjantit",
+          "headers": {
+            "Host": "falling-haze-2fda.mohammadrz666.workers.dev"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "falling-haze-2fda.mohammadrz666.workers.dev",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ],
+          "show": false,
+          "fingerprint": "chrome"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-2",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.141.134",
+            "port": 443,
+            "users": [
+              {
+                "id": "620eeefc-bee9-11ef-b4fe-00163c18c779",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/Czechm3ntor.chickenkiller.com/vpnjantit",
+          "headers": {
+            "Host": "falling-haze-2fda.mohammadrz666.workers.dev"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "falling-haze-2fda.mohammadrz666.workers.dev",
+{
+  "remarks": "Xray-Load-Balancer (Surfboardv2ray)",
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "api",
+      "port": 10813,
+      "listen": "127.0.0.1",
+      "protocol": "dokodemo-door",
+      "settings": {
+        "udp": false,
+        "address": "127.0.0.1",
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy-1",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.141.134",
+            "port": 443,
+            "users": [
+              {
+                "id": "003afe20-bef1-11ef-9cdb-4bcb0f99365b",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/Francemntor.strangled.net/vpnjantit",
+          "headers": {
+            "Host": "falling-haze-2fda.mohammadrz666.workers.dev"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "falling-haze-2fda.mohammadrz666.workers.dev",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ],
+          "show": false,
+          "fingerprint": "chrome"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "proxy-2",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.141.134",
+            "port": 443,
+            "users": [
+              {
+                "id": "620eeefc-bee9-11ef-b4fe-00163c18c779",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/Czechm3ntor.chickenkiller.com/vpnjantit",
+          "headers": {
+            "Host": "falling-haze-2fda.mohammadrz666.workers.dev"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "falling-haze-2fda.mohammadrz666.workers.dev",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ],
+          "show": false,
+          "fingerprint": "chrome"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct-out"
+    }
+  ],
+  "stats": {},
+  "api": {
+    "tag": "api",
+    "services": [
+      "StatsService"
+    ]
+  },
+  "policy": {
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "burstObservatory": {
+    "pingConfig": {
+      "connectivity": "http://connectivitycheck.platform.hicloud.com/generate_204",
+      "destination": "http://www.google.com/gen_204",
+      "interval": "15m",
+      "sampling": 10,
+      "timeout": "3s"
+    },
+    "subjectSelector": [
+      "proxy-1",
+      "proxy-2"
+    ]
+  },
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com"
+    },
+    "servers": [
+      "1.1.1.1"
+    ]
+  },
+  "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-1",
+          "proxy-2"
+        ],
+        "strategy": {
+          "type": "leastLoad"
+        },
+        "tag": "xray-load-balancer"
+      }
+    ],
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "balancerTag": "xray-load-balancer",
+        "inboundTag": [
+          "socks",
+          "http"
+        ],
+        "type": "field"
+      }
+    ]
+  }
+}￼Enter          "alpn": [
+            "http/1.1",
+            "h2"
+          ],
+          "show": false,
+          "fingerprint": "chrome"
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct-out"
+    }
+  ],
+  "stats": {},
+  "api": {
+    "tag": "api",
+    "services": [
+      "StatsService"
+    ]
+  },
+  "policy": {
+ystem": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "burstObservatory": {
+    "pingConfig": {
+      "connectivity": "http://connectivitycheck.platform.hicloud.com/generate_204",
+      "destination": "http://www.google.com/gen_204",
+      "interval": "15m",
+      "sampling": 10,
+      "timeout": "3s"
+    },
+    "subjectSelector": [
+      "proxy-1",
+      "proxy-2"
+    ]
+  },
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com"
+    },
+    "servers": [
+      "1.1.1.1"
+    ]
+  },
