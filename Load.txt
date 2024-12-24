@@ -1,1 +1,303 @@
-dmxlc3M6Ly8zZjRkMThiYy01ZjViLTQ2OTQtOTExZC0yYzBhOTY3OTE2MzBAMTg1LjE1OS4xMjguOTU6NjQ4NzA/ZW5jcnlwdGlvbj1ub25lJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZzZWN1cml0eT1yZWFsaXR5JnNuaT13d3cueWFob28uY29tJmZwPWNocm9tZSZwYms9cGtUSk1ZWEZDbk9zZVY1bjZ4U21IbTFuTjU1cHhadmtaZkhwUmtxaTlETSZzaWQ9NjQzOTZhZTkmdHlwZT10Y3AmaGVhZGVyVHlwZT1ub25lI3ZsLXJlYWxpdHktbW1tCnZtZXNzOi8vZXlKaFpHUWlPaUozZDNjdWRtbHpZUzVqYjIwdWMyY2lMQ0poYVdRaU9pSXdJaXdpYUc5emRDSTZJbUpwYm1GeWVTMWhibTVwWlMxamFHbHdMV1J5YVc1ckxuUnllV05zYjNWa1pteGhjbVV1WTI5dElpd2lhV1FpT2lJelpqUmtNVGhpWXkwMVpqVmlMVFEyT1RRdE9URXhaQzB5WXpCaE9UWTNPVEUyTXpBaUxDSnVaWFFpT2lKM2N5SXNJbkJoZEdnaU9pSXpaalJrTVRoaVl5MDFaalZpTFRRMk9UUXRPVEV4WkMweVl6QmhPVFkzT1RFMk16QXRkbTBpTENKd2IzSjBJam9pT0RRME15SXNJbkJ6SWpvaWRtMHRZWEpuYnkxdGJXMGlMQ0owYkhNaU9pSjBiSE1pTENKemJta2lPaUppYVc1aGNua3RZVzV1YVdVdFkyaHBjQzFrY21sdWF5NTBjbmxqYkc5MVpHWnNZWEpsTG1OdmJTSXNJblI1Y0dVaU9pSnViMjVsSWl3aWRpSTZJaklpZlFvPQp2bWVzczovL2V5SmhaR1FpT2lJeE9EVXVNVFU1TGpFeU9DNDVOU0lzSW1GcFpDSTZJakFpTENKb2IzTjBJam9pZDNkM0xtSnBibWN1WTI5dElpd2lhV1FpT2lJelpqUmtNVGhpWXkwMVpqVmlMVFEyT1RRdE9URXhaQzB5WXpCaE9UWTNPVEUyTXpBaUxDSnVaWFFpT2lKM2N5SXNJbkJoZEdnaU9pSXpaalJrTVRoaVl5MDFaalZpTFRRMk9UUXRPVEV4WkMweVl6QmhPVFkzT1RFMk16QXRkbTBpTENKd2IzSjBJam9pTWpBMU1pSXNJbkJ6SWpvaWRtMHRkM010YlcxdElpd2lkR3h6SWpvaUlpd2lkSGx3WlNJNkltNXZibVVpTENKMklqb2lNaUo5Q2c9PQpoeXN0ZXJpYTI6Ly8zZjRkMThiYy01ZjViLTQ2OTQtOTExZC0yYzBhOTY3OTE2MzBAMTg1LjE1OS4xMjguOTU6MTY3NTI/JmFscG49aDMmaW5zZWN1cmU9MSZtcG9ydD0xNjc1MiZzbmk9d3d3LmJpbmcuY29tI2h5Mi1tbW0KdHVpYzovLzNmNGQxOGJjLTVmNWItNDY5NC05MTFkLTJjMGE5Njc5MTYzMDozZjRkMThiYy01ZjViLTQ2OTQtOTExZC0yYzBhOTY3OTE2MzBAMTg1LjE1OS4xMjguOTU6NDM3NTU/Y29uZ2VzdGlvbl9jb250cm9sPWJiciZ1ZHBfcmVsYXlfbW9kZT1uYXRpdmUmYWxwbj1oMyZzbmk9d3d3LmJpbmcuY29tJmFsbG93X2luc2VjdXJlPTEjdHU1LW1tbQo=
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.1",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": "www.visa.com.sg",
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.147.22",
+        "104.17.148.22",
+        "188.114.97.6",
+        "188.114.96.6",
+        "2a06:98c1:3121::6",
+        "2a06:98c1:3120::6"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 12334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "vl-reality-mmm § 0",
+        "vm-argo-mmm § 1",
+        "vm-ws-mmm § 2",
+        "hy2-mmm § 3",
+        "tu5-mmm § 4"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "vl-reality-mmm § 0",
+        "vm-argo-mmm § 1",
+        "vm-ws-mmm § 2",
+        "hy2-mmm § 3",
+        "tu5-mmm § 4"
+      ],
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "interval": "10m0s",
+      "idle_timeout": "1h40m0s"
+    },
+    {
+      "type": "vless",
+      "tag": "vl-reality-mmm § 0",
+      "server": "185.159.128.95",
+      "server_port": 64870,
+      "uuid": "3f4d18bc-5f5b-4694-911d-2c0a96791630",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pkTJMYXFCnOseV5n6xSmHm1nN55pxZvkZfHpRkqi9DM",
+          "short_id": "64396ae9"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "vm-argo-mmm § 1",
+      "server": "www.visa.com.sg",
+      "server_port": 8443,
+      "uuid": "3f4d18bc-5f5b-4694-911d-2c0a96791630",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "binary-annie-chip-drink.trycloudflare.com",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/3f4d18bc-5f5b-4694-911d-2c0a96791630-vm",
+        "headers": {
+          "Host": "binary-annie-chip-drink.trycloudflare.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vm-ws-mmm § 2",
+      "server": "185.159.128.95",
+      "server_port": 2052,
+      "uuid": "3f4d18bc-5f5b-4694-911d-2c0a96791630",
+      "security": "auto",
+      "authenticated_length": true,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/3f4d18bc-5f5b-4694-911d-2c0a96791630-vm",
+        "headers": {
+          "Host": "www.bing.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hy2-mmm § 3",
+      "server": "185.159.128.95",
+      "server_port": 16752,
+      "password": "3f4d18bc-5f5b-4694-911d-2c0a96791630",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "tu5-mmm § 4",
+      "server": "185.159.128.95",
+      "server_port": 43755,
+      "uuid": "3f4d18bc-5f5b-4694-911d-2c0a96791630",
+      "password": "3f4d18bc-5f5b-4694-911d-2c0a96791630",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-30",
+        "sleep": "2-8"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-ir.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:16756",
+      "secret": "BU6e_-AkDnLXEkuI"
+    }
+  }
+}
